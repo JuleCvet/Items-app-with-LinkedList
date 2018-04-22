@@ -100,7 +100,7 @@ public class MyLlinkedList implements  NodeList {
 
     @Override
     public void traverse(ListItem root) {
-//to see if we have some data
+                //to see if we have some data
         if (root == null){
             System.out.println("The list is empty.");
         }else{
@@ -109,5 +109,12 @@ public class MyLlinkedList implements  NodeList {
                 root = root.next();//output the code
         }
       }
+
+        //traverse with binary search
+//        if (root != null){
+//            System.out.println(root.getValue());
+//            traverse(root.next());
+//            //9 000 000 000 000 000 000 nodes, it will take 63 levels to go try all that records
+//        }
     }
 }
